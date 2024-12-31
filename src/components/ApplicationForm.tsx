@@ -9,6 +9,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useState } from "react";
+import { SectionTitle } from "./SectionTitle";
 
 export const ApplicationForm = () => {
   const [formData, setFormData] = useState({
@@ -27,6 +28,7 @@ export const ApplicationForm = () => {
     <div id="apply" className="bg-white py-24 sm:py-32">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
+          <SectionTitle title="Jetzt beantragen" />
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
             Jetzt Gütesiegel beantragen
           </h2>

@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { SectionTitle } from "./SectionTitle";
 
 const benefits = [
   {
@@ -23,6 +24,7 @@ export const Benefits = () => {
     <div className="bg-white py-24 sm:py-32">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
+          <SectionTitle title="Vorteile" />
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
             Ihre Vorteile als inhabergeführte Praxis
           </h2>

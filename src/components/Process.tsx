@@ -1,4 +1,5 @@
 import { CheckCircle2, Send, Shield, UserCheck } from "lucide-react";
+import { SectionTitle } from "./SectionTitle";
 
 const steps = [
   {
@@ -32,6 +33,7 @@ export const Process = () => {
     <div id="process" className="bg-white py-24 sm:py-32">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
+          <SectionTitle title="Ablauf" />
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
             So einfach geht's
           </h2>

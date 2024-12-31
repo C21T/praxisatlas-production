@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, Shield } from "lucide-react";
+import { SectionTitle } from "./SectionTitle";
 
 const pricingTiers = [
   {
@@ -45,6 +46,7 @@ export const Pricing = () => {
     <div id="pricing" className="bg-gray-50 py-24 sm:py-32">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
+          <SectionTitle title="Preise" />
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
             Transparent und fair
           </h2>

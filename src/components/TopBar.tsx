@@ -30,7 +30,7 @@ export const TopBar = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <span className="text-xl font-bold text-primary">Praxisatlas</span>
           </div>
