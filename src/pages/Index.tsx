@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { Benefits } from "@/components/Benefits";
 import { Process } from "@/components/Process";
 import { Pricing } from "@/components/Pricing";
+import { ApplicationForm } from "@/components/ApplicationForm";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
         </div>
         <Process />
         <Pricing />
+        <ApplicationForm />
       </main>
       <Footer />
     </>
