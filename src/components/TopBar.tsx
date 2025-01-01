@@ -44,60 +44,62 @@ export const TopBar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 h-full">
-        <nav className="flex items-center justify-between h-full">
-          <div className="text-xl font-bold text-primary">Praxisatlas</div>
+      <div className="w-full">
+        <div className="max-w-7xl mx-auto px-4 h-full">
+          <nav className="flex items-center justify-between h-full">
+            <div className="text-xl font-bold text-primary">Praxisatlas</div>
 
-          {isMobile ? (
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent>
-                <SheetHeader>
-                  <SheetTitle>Menu</SheetTitle>
-                </SheetHeader>
-                <div className="flex flex-col gap-4 mt-8">
-                  {navItems.map((item) => (
-                    <Button
-                      key={item.id}
-                      variant="ghost"
-                      onClick={() => scrollToSection(item.id)}
-                    >
-                      {item.label}
-                    </Button>
-                  ))}
-                  <Button
-                    className="bg-primary hover:bg-primary-light text-white"
-                    onClick={() => scrollToSection("application")}
-                  >
-                    Jetzt beantragen
+            {isMobile ? (
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
                   </Button>
-                </div>
-              </SheetContent>
-            </Sheet>
-          ) : (
-            <div className="flex items-center gap-8">
-              {navItems.map((item) => (
+                </SheetTrigger>
+                <SheetContent>
+                  <SheetHeader>
+                    <SheetTitle>Menu</SheetTitle>
+                  </SheetHeader>
+                  <div className="flex flex-col gap-4 mt-8">
+                    {navItems.map((item) => (
+                      <Button
+                        key={item.id}
+                        variant="ghost"
+                        onClick={() => scrollToSection(item.id)}
+                      >
+                        {item.label}
+                      </Button>
+                    ))}
+                    <Button
+                      className="bg-primary hover:bg-primary-light text-white"
+                      onClick={() => scrollToSection("application")}
+                    >
+                      Jetzt beantragen
+                    </Button>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            ) : (
+              <div className="flex items-center gap-8">
+                {navItems.map((item) => (
+                  <Button
+                    key={item.id}
+                    variant="ghost"
+                    onClick={() => scrollToSection(item.id)}
+                  >
+                    {item.label}
+                  </Button>
+                ))}
                 <Button
-                  key={item.id}
-                  variant="ghost"
-                  onClick={() => scrollToSection(item.id)}
+                  className="bg-primary hover:bg-primary-light text-white"
+                  onClick={() => scrollToSection("application")}
                 >
-                  {item.label}
+                  Jetzt beantragen
                 </Button>
-              ))}
-              <Button
-                className="bg-primary hover:bg-primary-light text-white"
-                onClick={() => scrollToSection("application")}
-              >
-                Jetzt beantragen
-              </Button>
-            </div>
-          )}
-        </nav>
+              </div>
+            )}
+          </nav>
+        </div>
       </div>
     </header>
   );
