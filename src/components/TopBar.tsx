@@ -38,68 +38,66 @@ export const TopBar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 h-20 z-50 transition-all duration-300 w-full ${
+      className={`fixed top-0 left-0 right-0 h-20 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white/80 backdrop-blur-md shadow-md"
           : "bg-transparent"
       }`}
     >
-      <div className="w-full">
-        <div className="max-w-7xl mx-auto px-4 h-full">
-          <nav className="flex items-center justify-between h-full">
-            <div className="text-xl font-bold text-primary">Praxisatlas</div>
+      <div className="container mx-auto h-full px-4">
+        <nav className="flex items-center justify-between h-full">
+          <div className="text-xl font-bold text-primary">Praxisatlas</div>
 
-            {isMobile ? (
-              <Sheet>
-                <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon">
-                    <Menu className="h-6 w-6" />
-                  </Button>
-                </SheetTrigger>
-                <SheetContent>
-                  <SheetHeader>
-                    <SheetTitle>Menu</SheetTitle>
-                  </SheetHeader>
-                  <div className="flex flex-col gap-4 mt-8">
-                    {navItems.map((item) => (
-                      <Button
-                        key={item.id}
-                        variant="ghost"
-                        onClick={() => scrollToSection(item.id)}
-                      >
-                        {item.label}
-                      </Button>
-                    ))}
-                    <Button
-                      className="bg-primary hover:bg-primary-light text-white"
-                      onClick={() => scrollToSection("application")}
-                    >
-                      Jetzt beantragen
-                    </Button>
-                  </div>
-                </SheetContent>
-              </Sheet>
-            ) : (
-              <div className="flex items-center gap-8">
-                {navItems.map((item) => (
-                  <Button
-                    key={item.id}
-                    variant="ghost"
-                    onClick={() => scrollToSection(item.id)}
-                  >
-                    {item.label}
-                  </Button>
-                ))}
-                <Button
-                  className="bg-primary hover:bg-primary-light text-white"
-                  onClick={() => scrollToSection("application")}
-                >
-                  Jetzt beantragen
+          {isMobile ? (
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
                 </Button>
-              </div>
-            )}
-          </nav>
-        </div>
+              </SheetTrigger>
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle>Menu</SheetTitle>
+                </SheetHeader>
+                <div className="flex flex-col gap-4 mt-8">
+                  {navItems.map((item) => (
+                    <Button
+                      key={item.id}
+                      variant="ghost"
+                      onClick={() => scrollToSection(item.id)}
+                    >
+                      {item.label}
+                    </Button>
+                  ))}
+                  <Button
+                    className="bg-primary hover:bg-primary-light text-white"
+                    onClick={() => scrollToSection("application")}
+                  >
+                    Jetzt beantragen
+                  </Button>
+                </div>
+              </SheetContent>
+            </Sheet>
+          ) : (
+            <div className="flex items-center gap-8">
+              {navItems.map((item) => (
+                <Button
+                  key={item.id}
+                  variant="ghost"
+                  onClick={() => scrollToSection(item.id)}
+                >
+                  {item.label}
+                </Button>
+              ))}
+              <Button
+                className="bg-primary hover:bg-primary-light text-white"
+                onClick={() => scrollToSection("application")}
+              >
+                Jetzt beantragen
+              </Button>
+            </div>
+          )}
+        </nav>
       </div>
     </header>
   );
