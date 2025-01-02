@@ -27,7 +27,7 @@ export const Hero = () => {
           <div className="md:w-1/2 flex justify-center items-center">
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 animate-fade-in">
               <img
-                src="/lovable-uploads/0dba6e29-1320-43d2-907d-9f2c8a16fdec.png"
+                src="/lovable-uploads/d4d19e13-3fee-423a-a010-6ac2e5214098.png"
                 alt="Praxisatlas Gütesiegel"
                 className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 drop-shadow-xl"
               />
