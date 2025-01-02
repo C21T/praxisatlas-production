@@ -32,6 +32,25 @@ export const Benefits = () => {
             Mit unserem Gütesiegel kommunizieren Sie klar die Werte Ihrer Praxis
           </p>
         </div>
+
+        {/* New section about private equity */}
+        <div className="mx-auto mt-12 max-w-3xl text-left">
+          <h3 className="text-2xl font-semibold text-primary mb-4">
+            Die Herausforderung: Private Equity im Gesundheitswesen
+          </h3>
+          <div className="space-y-4 text-gray-600">
+            <p>
+              In den letzten Jahren ist ein besorgniserregender Trend zu beobachten: Immer mehr Arztpraxen werden von Private-Equity-Gesellschaften aufgekauft. Diese Entwicklung führt zu einer schleichenden Kommerzialisierung des Gesundheitswesens, bei der wirtschaftliche Interessen zunehmend in den Vordergrund rücken.
+            </p>
+            <p>
+              Für Patientinnen und Patienten entsteht dabei ein gravierendes Problem: Die tatsächlichen Eigentumsverhältnisse und Entscheidungsstrukturen bleiben oft im Dunkeln. Während die Praxis äußerlich unverändert erscheint, können im Hintergrund Investoren die strategischen Entscheidungen treffen - mit potenziellen Auswirkungen auf die Behandlungsqualität.
+            </p>
+            <p>
+              Die fehlende Transparenz macht es für Patienten unmöglich zu erkennen, ob sie sich in einer inhabergeführten Praxis oder in einer von Investoren kontrollierten Einrichtung befinden. Diese Unklarheit untergräbt das Vertrauensverhältnis zwischen Arzt und Patient.
+            </p>
+          </div>
+        </div>
+
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {benefits.map((benefit) => (
