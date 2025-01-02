@@ -41,10 +41,10 @@ export const TopBar = () => {
       className={`fixed top-0 left-0 right-0 h-20 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white/80 backdrop-blur-md shadow-md"
-          : "bg-transparent"
+          : "bg-white/80 backdrop-blur-md"
       }`}
     >
-      <div className="container mx-auto h-full px-4">
+      <div className="max-w-[1400px] mx-auto px-4 h-full">
         <nav className="flex items-center justify-between h-full">
           <div className="text-xl font-bold text-primary">Praxisatlas</div>
 
