@@ -43,7 +43,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <div id="pricing" className="bg-gray-50 py-24 sm:py-32">
+    <div id="pricing" className="bg-gray-50 py-16 sm:py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
           <SectionTitle title="Preise" />
@@ -58,7 +58,7 @@ export const Pricing = () => {
           {pricingTiers.map((tier) => (
             <div
               key={tier.title}
-              className="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200"
+              className="mx-auto w-full max-w-sm rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200"
             >
               <h3 className="text-2xl font-bold text-primary">{tier.title}</h3>
               <p className="mt-4 text-base text-gray-600">

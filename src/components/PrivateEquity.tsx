@@ -3,7 +3,7 @@ import { SectionTitle } from "./SectionTitle";
 
 export const PrivateEquity = () => {
   return (
-    <div className="bg-gray-50 py-24 sm:py-32">
+    <div className="bg-gray-50 py-16 sm:py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
           <SectionTitle title="Herausforderung" />
