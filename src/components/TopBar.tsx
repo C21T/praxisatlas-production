@@ -48,7 +48,7 @@ export const TopBar = () => {
         <nav className="flex items-center justify-between h-full">
           <div className="h-10">
             <img
-              src="/lovable-uploads/4d94b5ca-8cdb-410e-9e81-ece5b08c30b0.png"
+              src="/lovable-uploads/e6fd3570-e4aa-4492-89d4-448eddfa8a1f.png"
               alt="Praxisatlas Logo"
               className="h-full w-auto"
             />
