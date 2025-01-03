@@ -15,7 +15,7 @@ const pricingTiers = [
     ],
   },
   {
-    title: "Berufsausübungsgemeinschaft",
+    title: "BAG/ÜBAG",
     price: "299",
     features: [
       "Digitales Gütesiegel",
