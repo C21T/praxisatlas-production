@@ -46,7 +46,13 @@ export const TopBar = () => {
     >
       <div className="max-w-[1400px] mx-auto px-4 h-full">
         <nav className="flex items-center justify-between h-full">
-          <div className="text-xl font-bold text-primary">Praxisatlas</div>
+          <div className="h-12">
+            <img
+              src="/lovable-uploads/4d94b5ca-8cdb-410e-9e81-ece5b08c30b0.png"
+              alt="Praxisatlas Logo"
+              className="h-full w-auto"
+            />
+          </div>
 
           {isMobile ? (
             <Sheet>
