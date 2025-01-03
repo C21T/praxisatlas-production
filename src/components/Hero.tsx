@@ -24,11 +24,18 @@ export const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="md:w-1/2 flex justify-center items-center">
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 animate-fade-in">
+          <div className="md:w-1/2 flex justify-center items-center gap-4 flex-wrap">
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 animate-fade-in">
               <img
-                src="/lovable-uploads/d4d19e13-3fee-423a-a010-6ac2e5214098.png"
-                alt="Praxisatlas Gütesiegel"
+                src="/lovable-uploads/2e1451a2-f9df-4ae5-901c-35535dce9fad.png"
+                alt="Praxisatlas Gütesiegel für Praxis"
+                className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 drop-shadow-xl"
+              />
+            </div>
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 animate-fade-in">
+              <img
+                src="/lovable-uploads/492c837c-17fd-4023-bd01-181d9b7911f8.png"
+                alt="Praxisatlas Gütesiegel für MVZ"
                 className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 drop-shadow-xl"
               />
             </div>
