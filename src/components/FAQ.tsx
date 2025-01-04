@@ -53,6 +53,14 @@ export const FAQ = () => {
                 Bei wesentlichen Änderungen der Praxisstruktur informieren Sie uns bitte umgehend. Wir prüfen dann, ob die Voraussetzungen für das Gütesiegel weiterhin erfüllt sind.
               </AccordionContent>
             </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger>
+                Wann kommt mein MVZ für eine Zertifizierung in Frage?
+              </AccordionTrigger>
+              <AccordionContent>
+                Ihr MVZ kommt für eine Zertifizierung in Frage, wenn es sich zu 100% in ärztlicher Hand befindet. Das bedeutet, dass keine externen, nichtärztlichen Kapitalgeber direkt oder indirekt Anteile am MVZ halten dürfen. Alle Gesellschafter müssen aktiv als Ärzte tätig sein.
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
       </div>
