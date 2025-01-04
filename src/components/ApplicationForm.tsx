@@ -21,7 +21,6 @@ export const ApplicationForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Here you would typically send the data to your backend
   };
 
   return (
@@ -63,7 +62,7 @@ export const ApplicationForm = () => {
                 required
               />
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 relative">
               <Label htmlFor="practiceType">Art der Praxis</Label>
               <Select
                 value={formData.practiceType}
@@ -71,14 +70,12 @@ export const ApplicationForm = () => {
                   setFormData({ ...formData, practiceType: value })
                 }
               >
-                <SelectTrigger>
+                <SelectTrigger className="w-full bg-white">
                   <SelectValue placeholder="Wählen Sie die Art Ihrer Praxis" />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="bg-white border shadow-lg z-50">
                   <SelectItem value="single">Einzelpraxis</SelectItem>
-                  <SelectItem value="group">
-                    Berufsausübungsgemeinschaft
-                  </SelectItem>
+                  <SelectItem value="group">BAG/ÜBAG</SelectItem>
                   <SelectItem value="mvz">MVZ ohne Investoren</SelectItem>
                 </SelectContent>
               </Select>
