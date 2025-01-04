@@ -27,8 +27,9 @@ const pricingTiers = [
     ],
   },
   {
-    title: "MVZ ohne Investoren",
+    title: "MVZ in ärztlicher Hand",
     price: "349",
+    subtext: "zzgl. 49€ pro Jahr für jeden weiteren KV-Sitz",
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
@@ -70,6 +71,9 @@ export const Pricing = () => {
                 </span>
                 <span className="text-sm font-semibold text-gray-600">/Jahr</span>
               </p>
+              {tier.subtext && (
+                <p className="mt-2 text-sm text-gray-600">{tier.subtext}</p>
+              )}
               <ul className="mt-8 space-y-3">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex gap-3">

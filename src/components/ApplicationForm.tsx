@@ -16,6 +16,7 @@ export const ApplicationForm = () => {
     owners: "",
     website: "",
     practiceType: "",
+    kvSeats: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -76,10 +77,26 @@ export const ApplicationForm = () => {
                 <SelectContent className="bg-white border shadow-lg z-50">
                   <SelectItem value="single">Einzelpraxis</SelectItem>
                   <SelectItem value="group">BAG/ÜBAG</SelectItem>
-                  <SelectItem value="mvz">MVZ ohne Investoren</SelectItem>
+                  <SelectItem value="mvz">MVZ in ärztlicher Hand</SelectItem>
                 </SelectContent>
               </Select>
             </div>
+            {formData.practiceType === "mvz" && (
+              <div className="space-y-2">
+                <Label htmlFor="kvSeats">Anzahl KV-Sitze</Label>
+                <Input
+                  id="kvSeats"
+                  type="number"
+                  min="1"
+                  placeholder="3"
+                  value={formData.kvSeats}
+                  onChange={(e) =>
+                    setFormData({ ...formData, kvSeats: e.target.value })
+                  }
+                  required={formData.practiceType === "mvz"}
+                />
+              </div>
+            )}
             <Button
               type="submit"
               size="lg"
