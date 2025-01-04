@@ -9,7 +9,6 @@ const pricingTiers = [
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
-      "Praxis-Verzeichnis Eintrag",
       "Marketing-Material",
       "Support & Updates",
     ],
@@ -20,7 +19,6 @@ const pricingTiers = [
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
-      "Praxis-Verzeichnis Eintrag",
       "Marketing-Material",
       "Support & Updates",
       "Mehrere Standorte möglich",
@@ -29,11 +27,10 @@ const pricingTiers = [
   {
     title: "MVZ in ärztlicher Hand",
     price: "349",
-    subtext: "zzgl. 49€ pro Jahr für jeden weiteren KV-Sitz",
+    subtext: "bis 3 KV-Sitze, zzgl. 49€ pro Jahr für jeden weiteren vollen KV-Sitz",
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
-      "Praxis-Verzeichnis Eintrag",
       "Marketing-Material",
       "Support & Updates",
       "Mehrere Standorte möglich",
