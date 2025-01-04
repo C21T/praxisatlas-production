@@ -5,6 +5,7 @@ import { PrivateEquity } from "@/components/PrivateEquity";
 import { Process } from "@/components/Process";
 import { Pricing } from "@/components/Pricing";
 import { ApplicationForm } from "@/components/ApplicationForm";
+import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -19,7 +20,10 @@ const Index = () => {
         </div>
         <Process />
         <Pricing />
-        <ApplicationForm />
+        <div id="apply">
+          <ApplicationForm />
+        </div>
+        <FAQ />
       </main>
       <Footer />
     </>

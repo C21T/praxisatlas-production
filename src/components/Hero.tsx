@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Shield } from "lucide-react";
 
 export const Hero = () => {
+  const scrollToApplication = () => {
+    const element = document.getElementById('apply');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white py-24 sm:py-32">
       <div className="container mx-auto px-4">
@@ -18,6 +25,7 @@ export const Hero = () => {
               <Button
                 size="lg"
                 className="animate-slide-in rounded-full bg-primary hover:bg-primary-light"
+                onClick={scrollToApplication}
               >
                 <Shield className="mr-2 h-5 w-5" />
                 Jetzt Gütesiegel beantragen

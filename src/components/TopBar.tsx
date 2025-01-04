@@ -77,7 +77,7 @@ export const TopBar = () => {
                   ))}
                   <Button
                     className="bg-primary hover:bg-primary-light text-white"
-                    onClick={() => scrollToSection("application")}
+                    onClick={() => scrollToSection("apply")}
                   >
                     Jetzt beantragen
                   </Button>
@@ -97,7 +97,7 @@ export const TopBar = () => {
               ))}
               <Button
                 className="bg-primary hover:bg-primary-light text-white"
-                onClick={() => scrollToSection("application")}
+                onClick={() => scrollToSection("apply")}
               >
                 Jetzt beantragen
               </Button>
