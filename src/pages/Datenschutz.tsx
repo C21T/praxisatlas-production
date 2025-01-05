@@ -85,7 +85,7 @@ const Datenschutz = () => {
             </p>
             <p>
               Telefon: +49 30 2204 4646<br />
-              E-Mail: praxisatlas@gmail.com
+              E-Mail: info@praxisatlas.com
             </p>
             <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
 
