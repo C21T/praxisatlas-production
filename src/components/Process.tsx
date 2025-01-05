@@ -30,7 +30,7 @@ const steps = [
 
 export const Process = () => {
   return (
-    <div className="bg-white py-12 sm:py-16">
+    <div id="process" className="bg-white py-12 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
           <SectionTitle title="Ablauf" />
