@@ -1,6 +1,20 @@
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Footer = () => {
+  const navigate = useNavigate();
+
+  const scrollToSection = (sectionId: string) => {
+    navigate("/");
+    // Wait for navigation to complete before scrolling
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
+
   return (
     <footer className="bg-white">
       <div className="container mx-auto px-4 py-12">
@@ -15,19 +29,28 @@ export const Footer = () => {
             <h4 className="text-sm font-semibold text-gray-900 mb-4">Navigation</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#benefits" className="text-gray-600 hover:text-primary text-sm">
+                <button
+                  onClick={() => scrollToSection("benefits")}
+                  className="text-gray-600 hover:text-primary text-sm"
+                >
                   Vorteile
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#process" className="text-gray-600 hover:text-primary text-sm">
+                <button
+                  onClick={() => scrollToSection("process")}
+                  className="text-gray-600 hover:text-primary text-sm"
+                >
                   Ablauf
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#pricing" className="text-gray-600 hover:text-primary text-sm">
+                <button
+                  onClick={() => scrollToSection("pricing")}
+                  className="text-gray-600 hover:text-primary text-sm"
+                >
                   Preise
-                </a>
+                </button>
               </li>
             </ul>
           </div>

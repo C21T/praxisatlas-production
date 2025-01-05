@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Menu } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
   Sheet,
   SheetContent,
@@ -13,6 +14,8 @@ import {
 export const TopBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const isMobile = useIsMobile();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +27,25 @@ export const TopBar = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
+  };
+
+  const handleLogoClick = () => {
+    navigate("/");
   };
 
   const navItems = [
@@ -46,7 +64,7 @@ export const TopBar = () => {
     >
       <div className="max-w-[1400px] mx-auto px-4 h-full">
         <nav className="flex items-center justify-between h-full">
-          <div className="h-10">
+          <div className="h-10 cursor-pointer" onClick={handleLogoClick}>
             <img
               src="/lovable-uploads/e6fd3570-e4aa-4492-89d4-448eddfa8a1f.png"
               alt="Praxisatlas Logo"
