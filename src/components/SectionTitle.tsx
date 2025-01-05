@@ -6,11 +6,13 @@ interface SectionTitleProps {
 
 export const SectionTitle = ({ title }: SectionTitleProps) => {
   return (
-    <Button
-      variant="outline"
-      className="mb-6 rounded-full bg-blue-50 text-primary hover:bg-blue-100 border-none px-6"
-    >
-      {title}
-    </Button>
+    <div className="flex justify-center">
+      <Button
+        variant="outline"
+        className="mb-6 rounded-full bg-blue-50 text-primary hover:bg-blue-100 border-none px-6"
+      >
+        {title}
+      </Button>
+    </div>
   );
 };
