@@ -3,16 +3,16 @@ import { SectionTitle } from "./SectionTitle";
 
 export const PrivateEquity = () => {
   return (
-    <div className="bg-gray-50 py-16 sm:py-24">
+    <div className="bg-gray-50 py-12 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
           <SectionTitle title="Herausforderung" />
-          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl mb-16">
+          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl mb-12">
             Private Equity im Gesundheitswesen
           </h2>
         </div>
 
-        <div className="mx-auto max-w-5xl space-y-16">
+        <div className="mx-auto max-w-5xl space-y-12">
           <div className="flex gap-6 items-start">
             <TrendingUp className="h-8 w-8 text-primary-light flex-shrink-0 mt-1" />
             <div>

@@ -47,7 +47,7 @@ export const Pricing = () => {
   };
 
   return (
-    <div id="pricing" className="bg-gray-50 py-16 sm:py-24">
+    <div id="pricing" className="bg-gray-50 py-12 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
           <SectionTitle title="Preise" />
@@ -58,7 +58,7 @@ export const Pricing = () => {
             Investieren Sie in Ihre Unabhängigkeit
           </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-lg gap-8 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-12 sm:mt-16 grid max-w-lg gap-8 lg:max-w-none lg:grid-cols-3">
           {pricingTiers.map((tier) => (
             <div
               key={tier.title}

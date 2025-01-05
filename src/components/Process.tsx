@@ -30,7 +30,7 @@ const steps = [
 
 export const Process = () => {
   return (
-    <div id="process" className="bg-white py-16 sm:py-24">
+    <div className="bg-white py-12 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
           <SectionTitle title="Ablauf" />
@@ -41,8 +41,8 @@ export const Process = () => {
             In wenigen Schritten zu Ihrem Gütesiegel
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
+        <div className="mx-auto mt-12 sm:mt-16 max-w-2xl lg:max-w-none">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-12 lg:max-w-none lg:grid-cols-4">
             {steps.map((step, index) => (
               <div key={step.title} className="flex flex-col items-center text-center">
                 <dt className="flex items-center gap-x-3 text-xl font-semibold leading-7 text-primary">

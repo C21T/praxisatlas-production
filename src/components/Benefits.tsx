@@ -21,7 +21,7 @@ const benefits = [
 
 export const Benefits = () => {
   return (
-    <div className="bg-white py-16 sm:py-24">
+    <div className="bg-white py-12 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
           <SectionTitle title="Vorteile" />
@@ -33,8 +33,8 @@ export const Benefits = () => {
           </p>
         </div>
 
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-12 sm:mt-16 max-w-2xl lg:max-w-none">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-12 lg:max-w-none lg:grid-cols-3">
             {benefits.map((benefit) => (
               <div key={benefit.title} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-xl font-semibold leading-7 text-primary">
