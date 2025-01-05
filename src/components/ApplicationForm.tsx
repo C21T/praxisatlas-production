@@ -10,6 +10,9 @@ import {
 } from "@/components/ui/select";
 import { useState } from "react";
 import { SectionTitle } from "./SectionTitle";
+import { useToast } from "@/components/ui/use-toast";
+
+const FORMSPARK_ACTION_URL = "https://submit-form.com/YOUR_FORM_ID";
 
 export const ApplicationForm = () => {
   const [formData, setFormData] = useState({
@@ -18,10 +21,49 @@ export const ApplicationForm = () => {
     practiceType: "",
     kvSeats: "",
   });
+  const [submitting, setSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setSubmitting(true);
+
+    try {
+      const response = await fetch(FORMSPARK_ACTION_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          _redirect: window.location.href,
+        }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Antrag erfolgreich gesendet",
+          description: "Wir werden uns in Kürze bei Ihnen melden.",
+        });
+        setFormData({
+          owners: "",
+          website: "",
+          practiceType: "",
+          kvSeats: "",
+        });
+      } else {
+        throw new Error("Submission failed");
+      }
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Fehler beim Senden",
+        description: "Bitte versuchen Sie es später erneut.",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -101,8 +143,9 @@ export const ApplicationForm = () => {
               type="submit"
               size="lg"
               className="w-full rounded-full bg-primary hover:bg-primary-light"
+              disabled={submitting}
             >
-              Antrag absenden
+              {submitting ? "Wird gesendet..." : "Antrag absenden"}
             </Button>
           </form>
         </div>
