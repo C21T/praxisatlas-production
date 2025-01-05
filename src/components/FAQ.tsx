@@ -19,7 +19,7 @@ export const FAQ = () => {
             Hier finden Sie Antworten auf die häufigsten Fragen zum Praxisatlas Gütesiegel
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl">
+        <div className="mx-auto mt-16 max-w-2xl pb-[50px]">
           <Accordion type="single" collapsible className="w-full text-left">
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-left">
