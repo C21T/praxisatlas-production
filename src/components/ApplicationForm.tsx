@@ -25,11 +25,25 @@ export const ApplicationForm = () => {
   const [submitting, setSubmitting] = useState(false);
   const { toast } = useToast();
 
+  const formatWebsiteUrl = (url: string) => {
+    if (!url) return url;
+    url = url.trim();
+    if (!url.match(/^https?:\/\//i)) {
+      return `https://${url.replace(/^www\./i, '')}`;
+    }
+    return url;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
 
     try {
+      const formattedData = {
+        ...formData,
+        website: formatWebsiteUrl(formData.website),
+      };
+
       const response = await fetch(FORMSPARK_ACTION_URL, {
         method: "POST",
         headers: {
@@ -37,7 +51,7 @@ export const ApplicationForm = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          ...formData,
+          ...formattedData,
           _redirect: window.location.href,
         }),
       });
@@ -97,8 +111,8 @@ export const ApplicationForm = () => {
               <Label htmlFor="website">Praxiswebsite</Label>
               <Input
                 id="website"
-                type="url"
-                placeholder="https://www.ihre-praxis.de"
+                type="text"
+                placeholder="www.ihre-praxis.de"
                 value={formData.website}
                 onChange={(e) =>
                   setFormData({ ...formData, website: e.target.value })
