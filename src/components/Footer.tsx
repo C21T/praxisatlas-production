@@ -22,7 +22,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-primary mb-4">Praxisatlas</h3>
             <p className="text-gray-600 text-sm">
-              Das Gütesiegel für inhabergeführte Arztpraxen
+              Das Gütesiegel für Arztpraxen und MVZ in ärztlicher Hand
             </p>
           </div>
           <div>
