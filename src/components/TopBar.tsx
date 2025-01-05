@@ -29,7 +29,6 @@ export const TopBar = () => {
   const scrollToSection = (sectionId: string) => {
     if (location.pathname !== "/") {
       navigate("/");
-      // Wait for navigation to complete before scrolling
       setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -90,12 +89,13 @@ export const TopBar = () => {
                       key={item.id}
                       variant="ghost"
                       onClick={() => scrollToSection(item.id)}
+                      className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-primary hover:after:w-full after:transition-all after:duration-300"
                     >
                       {item.label}
                     </Button>
                   ))}
                   <Button
-                    className="bg-primary hover:bg-primary-light text-white"
+                    className="bg-primary hover:bg-primary-light text-white transition-colors duration-300"
                     onClick={() => scrollToSection("apply")}
                   >
                     Jetzt beantragen
@@ -110,12 +110,13 @@ export const TopBar = () => {
                   key={item.id}
                   variant="ghost"
                   onClick={() => scrollToSection(item.id)}
+                  className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-primary hover:after:w-full after:transition-all after:duration-300"
                 >
                   {item.label}
                 </Button>
               ))}
               <Button
-                className="bg-primary hover:bg-primary-light text-white"
+                className="bg-primary hover:bg-primary-light text-white transition-colors duration-300"
                 onClick={() => scrollToSection("apply")}
               >
                 Jetzt beantragen
