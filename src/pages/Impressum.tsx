@@ -1,9 +1,13 @@
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
 
 const Impressum = () => {
   return (
     <>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <TopBar />
       <main className="min-h-screen bg-background pt-16">
         <div className="container mx-auto px-4 py-12">
