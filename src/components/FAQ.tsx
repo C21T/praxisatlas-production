@@ -26,7 +26,7 @@ export const FAQ = () => {
                 Wie lange ist das Gütesiegel gültig?
               </AccordionTrigger>
               <AccordionContent>
-                Das Praxisatlas Gütesiegel ist für 12 Monate gültig. Nach Ablauf können Sie es einfach verlängern.
+                Das Praxisatlas Gütesiegel hat eine Gültigkeit von 12 Monaten ab Erwerb und verlängert sich anschließend automatisch. Sie haben jederzeit die Möglichkeit, das Gütesiegel vor Ablauf der 12 Monate zu kündigen. Nach einer Kündigung darf das Siegel jedoch nicht mehr verwendet werden.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
