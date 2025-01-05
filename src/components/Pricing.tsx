@@ -15,7 +15,7 @@ const pricingTiers = [
   },
   {
     title: "BAG/ÜBAG",
-    price: "289",
+    price: "249",
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
