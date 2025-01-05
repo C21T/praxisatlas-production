@@ -5,7 +5,7 @@ import { SectionTitle } from "./SectionTitle";
 const pricingTiers = [
   {
     title: "Einzelpraxis",
-    price: "199",
+    price: "229",
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
@@ -15,7 +15,7 @@ const pricingTiers = [
   },
   {
     title: "BAG/ÜBAG",
-    price: "299",
+    price: "349",
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
@@ -26,7 +26,7 @@ const pricingTiers = [
   },
   {
     title: "MVZ in ärztlicher Hand",
-    price: "349",
+    price: "399",
     subtext: "bis 3 KV-Sitze, zzgl. 49€ pro Jahr für jeden weiteren vollen KV-Sitz",
     features: [
       "Digitales Gütesiegel",
@@ -34,12 +34,18 @@ const pricingTiers = [
       "Marketing-Material",
       "Support & Updates",
       "Mehrere Standorte möglich",
-      "Erweiterte Verifizierung",
     ],
   },
 ];
 
 export const Pricing = () => {
+  const scrollToApply = () => {
+    const element = document.getElementById('apply');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div id="pricing" className="bg-gray-50 py-16 sm:py-24">
       <div className="container mx-auto px-4">
@@ -66,7 +72,7 @@ export const Pricing = () => {
                 <span className="text-4xl font-bold text-primary">
                   {tier.price}€
                 </span>
-                <span className="text-sm font-semibold text-gray-600">/Jahr</span>
+                <span className="text-sm font-semibold text-gray-600">/Jahr inkl. MwSt.</span>
               </p>
               {tier.subtext && (
                 <p className="mt-2 text-sm text-gray-600">{tier.subtext}</p>
@@ -82,6 +88,7 @@ export const Pricing = () => {
               <Button
                 size="lg"
                 className="mt-8 w-full rounded-full bg-primary hover:bg-primary-light"
+                onClick={scrollToApply}
               >
                 <Shield className="mr-2 h-5 w-5" />
                 Jetzt beantragen
