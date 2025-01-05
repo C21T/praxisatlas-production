@@ -75,7 +75,7 @@ export const ApplicationForm = () => {
             Jetzt Gütesiegel beantragen
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Füllen Sie das Formular aus, um den Antragsprozess zu starten
+            Füllen Sie das Formular aus, um den Antragsprozess zu starten. Dies stellt noch keinen Kauf dar. Ihr Antrag wird zunächst geprüft und im Falle eines positiven Ergebnisses erhalten Sie von uns einen Link zur Bezahlung. Im Anschluss erhalten Sie das Praxisatlas Siegel.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-xl">
