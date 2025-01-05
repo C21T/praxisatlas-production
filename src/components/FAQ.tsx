@@ -8,7 +8,7 @@ import { SectionTitle } from "./SectionTitle";
 
 export const FAQ = () => {
   return (
-    <div id="faq" className="bg-gray-50 py-12 sm:py-16">
+    <div className="bg-gray-50 py-12 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
           <SectionTitle title="FAQ" />
