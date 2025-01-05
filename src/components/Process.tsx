@@ -44,7 +44,7 @@ export const Process = () => {
         <div className="mx-auto mt-12 sm:mt-16 max-w-2xl lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-12 lg:max-w-none lg:grid-cols-4">
             {steps.map((step, index) => (
-              <div key={step.title} className="flex flex-col items-center text-center">
+              <div key={step.title} className="flex flex-col items-start text-left lg:items-center lg:text-center">
                 <dt className="flex items-center gap-x-3 text-xl font-semibold leading-7 text-primary">
                   <step.icon className="h-8 w-8 flex-none text-primary-light" />
                   {step.title}
