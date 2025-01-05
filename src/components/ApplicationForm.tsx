@@ -67,7 +67,7 @@ export const ApplicationForm = () => {
   };
 
   return (
-    <div id="apply" className="bg-white py-24 sm:py-32">
+    <div id="apply" className="bg-white py-12 sm:py-16">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
           <SectionTitle title="Jetzt beantragen" />
