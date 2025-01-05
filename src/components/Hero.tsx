@@ -35,14 +35,14 @@ export const Hero = () => {
           <div className="md:w-1/2 flex justify-center items-center gap-4 flex-wrap">
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 animate-fade-in">
               <img
-                src="/lovable-uploads/2e1451a2-f9df-4ae5-901c-35535dce9fad.png"
+                src="/lovable-uploads/2fe30a2e-8849-4441-93c6-abb32829abb6.png"
                 alt="Praxisatlas Gütesiegel für Praxis"
                 className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 drop-shadow-xl"
               />
             </div>
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 animate-fade-in">
               <img
-                src="/lovable-uploads/492c837c-17fd-4023-bd01-181d9b7911f8.png"
+                src="/lovable-uploads/d57bc736-4024-44b1-b6fc-45e82a9df51a.png"
                 alt="Praxisatlas Gütesiegel für MVZ"
                 className="w-full h-full object-contain hover:scale-105 transition-transform duration-300 drop-shadow-xl"
               />
