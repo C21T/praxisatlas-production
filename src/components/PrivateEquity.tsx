@@ -7,7 +7,7 @@ export const PrivateEquity = () => {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
           <SectionTitle title="Herausforderung" />
-          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl mb-12">
+          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl mb-12 py-[10px]">
             Private Equity im Gesundheitswesen
           </h2>
         </div>

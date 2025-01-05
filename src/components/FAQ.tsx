@@ -12,7 +12,7 @@ export const FAQ = () => {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl lg:text-center">
           <SectionTitle title="FAQ" />
-          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl py-[10px]">
             Häufig gestellte Fragen
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
