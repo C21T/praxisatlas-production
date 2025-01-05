@@ -10,7 +10,7 @@ export const Hero = () => {
   };
 
   return (
-    <div className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white py-24 sm:py-32">
+    <div className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white py-16 sm:py-24">
       <div className="container mx-auto px-4">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           <div className="text-left md:w-1/2">
