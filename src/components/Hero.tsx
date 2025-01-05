@@ -19,7 +19,7 @@ export const Hero = () => {
             </h1>
             <p className="animate-slide-in mt-6 text-lg leading-8 text-gray-600">
               Zeigen Sie Ihren Patientinnen und Patienten, dass Ihre Praxis
-              unabhängig und frei von Investoren-Einfluss geführt wird.
+              unabhängig und frei von Investoreneinfluss geführt wird.
             </p>
             <div className="mt-10">
               <Button

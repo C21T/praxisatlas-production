@@ -42,23 +42,18 @@ export const Footer = () => {
                   Datenschutz
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-primary text-sm">
-                  AGB
-                </a>
-              </li>
             </ul>
           </div>
           <div>
             <h4 className="text-sm font-semibold text-gray-900 mb-4">Kontakt</h4>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:info@praxisatlas.de" className="text-gray-600 hover:text-primary text-sm">
-                  info@praxisatlas.de
+                <a href="mailto:info@praxisatlas.com" className="text-gray-600 hover:text-primary text-sm">
+                  info@praxisatlas.com
                 </a>
               </li>
               <li className="text-gray-600 text-sm">
-                Tel: +49 (0) 123 456789
+                Telefon: +49 30 2204 4646
               </li>
             </ul>
           </div>
