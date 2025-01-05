@@ -26,7 +26,7 @@ export const Benefits = () => {
         <div className="mx-auto max-w-2xl lg:text-center">
           <SectionTitle title="Vorteile" />
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl py-[10px]">
-            Ihre Vorteile als inhabergeführte Praxis
+            Ihre Vorteile als inhabergeführte Praxis bzw. MVZ
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Mit unserem Gütesiegel kommunizieren Sie klar die Werte Ihrer Praxis
