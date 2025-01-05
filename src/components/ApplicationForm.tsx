@@ -81,10 +81,10 @@ export const ApplicationForm = () => {
         <div className="mx-auto mt-16 max-w-xl">
           <form onSubmit={handleSubmit} className="space-y-8">
             <div className="space-y-2">
-              <Label htmlFor="owners">Name(n) des/der Praxisinhaber</Label>
+              <Label htmlFor="owners">Name(n) des/der Praxisinhaber(in)</Label>
               <Input
                 id="owners"
-                placeholder="Dr. Max Mustermann, Dr. Maria Musterfrau"
+                placeholder="Dr. Musterfrau, Dr. Mustermann"
                 value={formData.owners}
                 onChange={(e) =>
                   setFormData({ ...formData, owners: e.target.value })
