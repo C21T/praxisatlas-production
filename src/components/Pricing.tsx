@@ -27,7 +27,7 @@ const pricingTiers = [
   {
     title: "MVZ in ärztlicher Hand",
     price: "399",
-    subtext: "bis 3 KV-Sitze, zzgl. 49€ pro Jahr für jeden weiteren vollen KV-Sitz",
+    subtext: "bis 3 KV-Sitze, zzgl. 49€ pro Jahr inkl. MwSt. für jeden weiteren vollen KV-Sitz",
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
