@@ -14,7 +14,7 @@ export const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12">
           <div className="text-left md:w-1/2">
-            <h1 className="animate-fade-in text-4xl font-bold tracking-tight leading-[1.3] text-primary sm:text-6xl">
+            <h1 className="animate-fade-in text-4xl font-bold tracking-tight text-primary sm:text-6xl">
               Das Gütesiegel für Arztpraxen und MVZ in ärztlicher Hand
             </h1>
             <p className="animate-slide-in mt-6 text-lg leading-8 text-gray-600">
