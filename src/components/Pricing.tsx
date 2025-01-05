@@ -5,7 +5,7 @@ import { SectionTitle } from "./SectionTitle";
 const pricingTiers = [
   {
     title: "Einzelpraxis",
-    price: "229",
+    price: "199",
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
@@ -15,7 +15,7 @@ const pricingTiers = [
   },
   {
     title: "BAG/ÜBAG",
-    price: "349",
+    price: "289",
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
@@ -26,8 +26,8 @@ const pricingTiers = [
   },
   {
     title: "MVZ in ärztlicher Hand",
-    price: "399",
-    subtext: "bis 3 KV-Sitze, zzgl. 49€ pro Jahr inkl. MwSt. für jeden weiteren vollen KV-Sitz",
+    price: "349",
+    subtext: "bis 3 KV-Sitze, zzgl. 39€ pro Jahr zzgl. MwSt. für jeden weiteren vollen KV-Sitz",
     features: [
       "Digitales Gütesiegel",
       "Website-Integration",
@@ -72,7 +72,7 @@ export const Pricing = () => {
                 <span className="text-4xl font-bold text-primary">
                   {tier.price}€
                 </span>
-                <span className="text-sm font-semibold text-gray-600">/Jahr inkl. MwSt.</span>
+                <span className="text-sm font-semibold text-gray-600">/Jahr zzgl. MwSt.</span>
               </p>
               {tier.subtext && (
                 <p className="mt-2 text-sm text-gray-600">{tier.subtext}</p>
