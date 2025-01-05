@@ -21,7 +21,7 @@ export const Hero = () => {
               Zeigen Sie Ihren Patientinnen und Patienten, dass Ihre Praxis
               unabhängig und frei von Investoreneinfluss geführt wird.
             </p>
-            <div className="mt-10">
+            <div className="mt-10 flex justify-center md:justify-start">
               <Button
                 size="lg"
                 className="animate-slide-in rounded-full bg-primary hover:bg-primary-light"
