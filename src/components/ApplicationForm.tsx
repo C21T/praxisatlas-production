@@ -12,6 +12,7 @@ import { useState } from "react";
 import { SectionTitle } from "./SectionTitle";
 import { useToast } from "@/components/ui/use-toast";
 
+// Replace YOUR_FORM_ID with the actual form ID provided by Formspark
 const FORMSPARK_ACTION_URL = "https://submit-form.com/YOUR_FORM_ID";
 
 export const ApplicationForm = () => {
