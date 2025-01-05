@@ -19,10 +19,10 @@ export const FAQ = () => {
             Hier finden Sie Antworten auf die häufigsten Fragen zum Praxisatlas Gütesiegel
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl text-left">
-          <Accordion type="single" collapsible className="w-full">
+        <div className="mx-auto mt-16 max-w-2xl">
+          <Accordion type="single" collapsible className="w-full text-left">
             <AccordionItem value="item-1">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-left">
                 Wie lange ist das Gütesiegel gültig?
               </AccordionTrigger>
               <AccordionContent>
@@ -30,7 +30,7 @@ export const FAQ = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-left">
                 Wie kann ich das Gütesiegel auf meiner Website einbinden?
               </AccordionTrigger>
               <AccordionContent>
@@ -38,7 +38,7 @@ export const FAQ = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-left">
                 Wie läuft der Prüfungsprozess ab?
               </AccordionTrigger>
               <AccordionContent>
@@ -46,7 +46,7 @@ export const FAQ = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-left">
                 Was passiert bei Änderungen der Praxisstruktur?
               </AccordionTrigger>
               <AccordionContent>
@@ -54,7 +54,7 @@ export const FAQ = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-left">
                 Wann kommt mein MVZ für eine Zertifizierung in Frage?
               </AccordionTrigger>
               <AccordionContent>
