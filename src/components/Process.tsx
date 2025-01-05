@@ -23,7 +23,7 @@ const steps = [
   {
     title: "Gütesiegel erhalten",
     description:
-      "Sie erhalten Ihr digitales Gütesiegel zur Einbindung auf Ihrer Website.",
+      "Sie schließen den Kauf ab und erhalten das Gütesiegel zur Einbindung auf Ihrer Website.",
     icon: Shield,
   },
 ];
