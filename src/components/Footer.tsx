@@ -52,6 +52,14 @@ export const Footer = () => {
                   Preise
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("faq")}
+                  className="text-gray-600 hover:text-primary text-sm"
+                >
+                  FAQ
+                </button>
+              </li>
             </ul>
           </div>
           <div>

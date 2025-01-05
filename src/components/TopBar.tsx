@@ -52,6 +52,7 @@ export const TopBar = () => {
     { label: "Vorteile", id: "benefits" },
     { label: "Ablauf", id: "process" },
     { label: "Preise", id: "pricing" },
+    { label: "FAQ", id: "faq" },
   ];
 
   return (
